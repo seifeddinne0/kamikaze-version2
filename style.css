@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+body{
+    width: 100%;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding:40px 0;
+}
+h1{
+    font-size: 50px;
+    line-height:60px;
+    color: #222;
+}
+h2{
+    font-size: 50px;
+    line-height:64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height:54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 12px;
+    font-weight:700px;
+    
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.header img{
+    max-width: 50px;
+}
+.header{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #d9d9d7;
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left:0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    list-style: none;
+}
+nav li{
+    padding: 0 20px;
+    position: relative;
+}
+nav li  a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.9s ease;
+}
+nav li i{
+    font-size: 25px;
+    margin-right: 20px;
+}
+nav li a:hover,nav li a.active ,nav li i:hover{
+    color: #088178;
+    cursor: pointer;
+}
+nav li a.active::after,nav li a:hover::after 
+{
+    content: "";
+    width: 30%;
+    height: 2.5px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left:20px;
+}
+#welcome{
+    background: url("kamikaze.jpg");
+    background-position: top 25% right 0%;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+#welcome h4{
+    padding-bottom: 15px;
+}
+#welcome h1{
+    color: #088178;
+}
+#welcome button{
+    background-image: url("download.jpeg");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    background-position: center;
+    background-size:auto;
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px ;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding:10px 0 ;
+}
+#product1 .pro .des span{
+    color: #060606;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border-radius:50px;
+    background-color:#e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#small-ban{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+#small-ban .ban-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 580px;
+    height: 50vh;
+    background-image: url("banner1.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 25px;
+}
+#small-ban h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#small-ban h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+#small-ban span{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+#small-ban .ban-box2{
+    background-image: url("banner2.jpeg");
+}
+
+footer{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+    max-width: 300px;
+    max-height: 150px;
+    padding-right: 0;
+    margin-right: 0;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin:0 0 8px 0 ;
+}
+footer a{
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 13px;
+    margin:0 0 8px 0 ;
+}
+footer .follow{
+    margin-top: 12px;
+}
+footer .follow i{
+    color: #465b52;
+    font-size: 20px;
+    cursor: pointer;
+    padding-right:6px ;
+}
+footer .follow i:hover ,footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .about{
+    margin-top: 45px;
+}
+#byebye{
+    text-align: center;
+    background-color:#f5f4f4;
+    width: 100%;
+    box-shadow:10px 10px  rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-size: 100%;
+    background-position: 0 100% 0 100%;
+}
+#byebye h4{
+    font-size: 27px;
+    font-family:'Courier New', Courier, monospace ;
+}
+#byebye p{
+    color:#1a1a1a ;
+}
+#feedback{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #F5F5F5;
+    padding: 15px 0;
+    margin-top: -15px;
+}
+#feedback .feedback{
+    display: flex;
+}
+
+.feedback input{
+    margin-bottom: 25px;
+    height: 3.125rem;
+    width: 200px;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid #088178;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: -80px;
+}
+.feedback button{
+    cursor: pointer;
+    background-color:#088178;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: #088178;
+    font-size: 20px;
+    color: white;
+    width: 60px;
+    height:3.125rem ;
+}
