@@ -74,11 +74,12 @@ nav li  a{
     font-size: 20px;
     font-weight: 600;
     color: #1a1a1a;
-    transition: 0.9s ease;
+    transition: 0.5s ease;
 }
 nav li i{
     font-size: 25px;
     margin-right: 20px;
+    transition: 0.5s ease;
 }
 nav li a:hover,nav li a.active ,nav li i:hover{
     color: #088178;
@@ -226,6 +227,7 @@ nav li a.active::after,nav li a:hover::after
 }
 
 footer{
+    margin-top: 20px;
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -242,6 +244,7 @@ footer .logo{
     max-height: 150px;
     padding-right: 0;
     margin-right: 0;
+    margin-top: -10px;
 }
 footer h4{
     font-size: 14px;
@@ -276,7 +279,7 @@ footer .copyright{
     margin-top: 20px;
 }
 footer .about{
-    margin-top: 45px;
+    margin-top: 0;
 }
 #byebye{
     text-align: center;
@@ -338,7 +341,7 @@ footer .about{
 .header .mobile{
     display: none;
 }
-@media screen and (max-width: 1025px){
+@media (max-width: 1025px){
     #welcome{
         background: url("background.jpg");
         background-position: top 0 right 10% bottom 0 left 70% ;
@@ -361,15 +364,103 @@ footer .about{
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        min-width: 400px;
-        height: 50vh;
+        min-width: 360px;
+        height: 24vh;
         background-image: url("banner1.jpeg");
         background-position: center;
-        background-size: cover;
+        background-size:contain;
         text-shadow: #222 0.2em 0.2em 0.2em;
     }
     #small-ban .ban-box2{
         background-image: url("banner2.jpeg");
     }
-    
+    #product1 .pro-container{
+        display: flex;
+        justify-content:initial;
+        padding-top:20px ;
+        flex-wrap: wrap;
+    }
+    #product1 .pro-container .pro{
+        margin-left: 20px;
+    }
 }
+@media (max-width:775px) {
+    #feedback{
+        display: flex;
+        flex-direction: column;
+        background-color: #F5F5F5;
+    }
+    #product1 .pro-container{
+        display: flex;
+        justify-content:space-between;
+        padding-top:20px ;
+        flex-wrap: wrap;
+    }
+    #product1 .pro-container .pro{
+        margin-left: 30px;
+    }
+    footer .logo{
+        margin-left: -50px;
+        max-width: 120px;
+        padding-right: 5px;
+    }
+    footer .col a,footer .col p{
+        font-size: 15px;
+    }
+    footer .follow .social-icons a{
+        font-size: 17px;
+    }
+    #welcome #text h2{
+        font-size:40px;
+    }
+    #welcome #text h1{
+        font-size:45px;
+    }
+    #small-ban .ban-box{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 290px;
+        height: 26vh;
+        background-image: url("banner1.jpeg");
+        background-position: center;
+        background-size:contain;
+        text-shadow: #222 0.2em 0.2em 0.2em;
+    }
+    #small-ban .ban-box span,#small-ban .ban-box h2,#small-ban .ban-box h4{
+        font-size: 15px;
+        margin-left: -10px;
+    }
+    #small-ban .ban-box2{
+        background-image: url("banner2.jpeg");
+    }
+    #byebye .large-ban h4{
+        font-size: 23px;
+    }
+    #feedback div{
+    margin: auto;
+    }
+    #feedback .feedback  {
+        text-align: center;
+        margin: auto;
+    }
+    .header{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        justify-content: space-between;
+        padding: 13px 40px;
+        background: #d9d9d7;
+        box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left:0;
+    }
+}
+@media (max-width:430px)  {
+    
+}            
+    
