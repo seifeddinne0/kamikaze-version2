@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <title>Kamikaze Wear</title>
 </head>
 <body>
     <header class="header">
-        <img src="logo.png" alt="Kamikaze Wear">
+        <a href="kamikaze.html"><img src="logo.png" alt="Kamikaze Wear"></a>
         <nav>
-            <ul>
-                <li><a class="active" href="">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-not-for-mob">
+                <li><a class="active" href="kamikaze.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
                 <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
+            <ul  class="show-on-mobile">
+                <li><a href="#"><i class="fa-solid fa-bag-shopping sac"></i></a></li>
+                <li><a onclick="myFunction()"><i class="fa-solid fa-bars-staggered"></i></a></li>
+            </ul>
         </nav>
-        <div class="mobile">
-            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
+        <ul class="sidebar" id="sidebar">
+            <li><a onclick="myFunction()"><i class="fa-solid fa-xmark x"></i></a></li>
+            <li><p>Kamikaze Wear</p></li>
+            <li><a href="kamikaze.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
     </header>
     <section id="welcome">
         <div id="text">
@@ -37,7 +46,7 @@
         <h2>Featured Products </h2>
         <p>Winter Collection New Modern design </p>
         <div class="pro-container">
-            <div class="pro">
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -53,7 +62,8 @@
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
             </div>
-            <div class="pro">
+        </a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -68,8 +78,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -84,8 +94,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -100,8 +110,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -116,8 +126,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -132,8 +142,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -148,8 +158,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -164,7 +174,7 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
+            </div></a>
 
         </div>
     </section>
@@ -172,7 +182,7 @@
         <h2>New arrivals </h2>
         <p>Winter Collection New Modern design </p>
         <div class="pro-container">
-            <div class="pro">
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -188,7 +198,8 @@
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
             </div>
-            <div class="pro">
+        </a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -203,8 +214,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -219,8 +230,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -235,8 +246,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -251,8 +262,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -267,8 +278,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -283,8 +294,8 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
-            <div class="pro">
+            </div></a>
+            <a href="#"><div class="pro">
                 <img src="product1.jpg" alt="product image">
                 <div class="des">
                     <span>brain</span>
@@ -299,7 +310,7 @@
                     <h4>80 DT</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus cart"></i></i></a>
-            </div>
+            </div></a>
 
         </div>
     </section>
@@ -331,15 +342,16 @@
         <button type="submit">send</button></div>
 </section>
     <footer class="section-p1">
+        <div class="mob-footer">
         <img class="logo" src="logo.png" alt="Kamikaze Wear">
-        <div class="col">
+        <div class="col Contacts">
             <h4>Contact</h4>
             <p><strong>adress : </strong> kamikaze@kamikaze.tn</p>
             <p><strong>phone : </strong> +216 73 933 933</p>
             <p><strong>hours : </strong> 8am ----> 7pm</p>
         </div>
         
-        <div class="col about">
+        <div class="col about mob-about">
             <h4>About</h4>
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>
@@ -352,6 +364,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
+    </div>
         <div class="copyright">
             <p>© Kamikaze Wear, Inc. All Rights Reserved.</p>
 
