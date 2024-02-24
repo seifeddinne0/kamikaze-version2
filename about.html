@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
     <script src="javascript.js"></script>
     <title>Kamikaze Wear</title>
 </head>
@@ -16,21 +17,120 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a class="active" href="about.html">About</a></li>
                 <li><a href="contacts.html">Contact</a></li>
-                <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
             </ul>
             <ul  class="show-on-mobile">
-                <li><a href="#"><i class="fa-solid fa-bag-shopping sac"></i></a></li>
-                <li><a onclick="myFunction()"><i class="fa-solid fa-bars-staggered"></i></a></li>
+                <li><i class="fa-solid fa-bag-shopping sac"></i></li>
+                <li><i onclick="myFunction()" class="fa-solid fa-bars-staggered"></i></li>
             </ul>
         </nav>
         <ul class="sidebar" id="sidebar">
-            <li><a onclick="myFunction()"><i class="fa-solid fa-xmark x"></i></a></li>
+            <li><i onclick="myFunction()" class="fa-solid fa-xmark x"></i></li>
             <li><p>Kamikaze Wear</p></li>
-            <li><a href="kamikaze.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contacts.html">Contact</a></li>
+            <li class="click-sidebar"><a href="kamikaze.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li class="click-sidebar"><a href="shop.html"><i class="fa-solid fa-shop"></i>Shop</a></li>
+            <li class="click-sidebar"><a href="about.html"><i class="fa-regular fa-address-card"></i>About</a></li>
+            <li class="click-sidebar"><a href="contacts.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
         </ul>
     </header>
+<h2 class="about-us-h2">About Us</h2>
+    <section>
+        <h3 class="about-us-title">Meet the Team</h3>
+        <div class="about-div">
+            <h5 class="about-us-s-title">Lead Designer - Sofien Feki:</h5>
+            <p class="about-us-p">
+                Role: As one of our visionary founders,
+                Sofien Feki is the creative force behind our brand,
+                shaping the visual identity and aesthetics of our products.
+                Holding a Bachelor's Degree in Graphic Design and boasting over a decade of experience in the industry,
+                Sofien brings a keen eye for detail and a passion for creating designs that seamlessly blend style with functionality.
+                His work has garnered recognition in several design competitions, 
+                showcasing commitment to pushing boundaries and staying at the forefront of design trends.
+            </p>
+        </div>
+            <div class="about-div">
+                <h5 class="about-us-s-title">Co-Founder and Web Developer - Seif Eddine Ben Achour:</h5>
+                <p class="about-us-p">
+                Role: Seif Eddine Ben Achour, another integral founder, 
+                is our Senior Developer and the driving force behind the technological innovation that powers our products. 
+                Holding a Master's Degree in Computer Science and with a rich background in software development, 
+                Seif has a proven track record of bringing ideas to life through code. 
+                His expertise lies in creating intuitive user interfaces and optimizing backend systems for peak performance. 
+                With a passion for staying ahead in the dynamic world of technology, Seif ensures our products are not just current but cutting-edge.
+                </p>
+            </div>
+            <div class="about-div">
+                <h5 class="about-us-s-title">Co-Founder and Head of Sales - Aarbi Wahbi:</h5>
+                <p class="about-us-p">
+                Role: Aarbi Wahbi, one of the founding pillars, 
+                is the face of our brand, leading our sales efforts and ensuring our products reach the right audience. 
+                With a background in Business Management and a successful track record in sales and marketing, 
+                Aarbi combines strategic thinking with a personable approach. 
+                Their passion for building lasting customer relationships has been instrumental in expanding our market presence. 
+                Aarbi's dedication to understanding customer needs and delivering personalized solutions has been a driving force in our brand's success.
+                </p>
+            </div>
+            <div class="about-div">
+                <p class="about-us-p">
+                    These three visionary founders, Sofien Feki, Seif Eddine Ben Achour, and Aarbi Wahbi, 
+                    embody the spirit of our brand, each contributing their unique skills, experiences, 
+                    and passion to make our products stand out in the market. Together, they form a dynamic team committed to excellence and customer satisfaction.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div>
+            <h3 class="about-us-title">Why Choose Us</h3>
+            <div class="about-div">
+                <h5 class="about-us-s-title" >Exceptional Quality:</h5>
+                <p class="about-us-p">
+                    Our products are crafted with the highest quality materials, ensuring durability and longevity that surpasses industry standards.
+                </p>
+            </div>
+            <div class="about-div">
+                <h5 class="about-us-s-title">Unique Design Aesthetics:</h5>
+                <p class="about-us-p">
+                    Stand out from the crowd with our uniquely designed products. 
+                    Our team of creative experts ensures that each item reflects a perfect blend of style and functionality.
+                </p>
+            </div>
+            <div class="about-div">
+                <h5 class="about-us-s-title">Guaranteed Satisfaction:</h5>
+                <p class="about-us-p about-end">
+                    We stand by the quality of our products. Enjoy peace of mind with our satisfaction guarantee – if you're not happy, we're not satisfied.
+                </p>
+            </div>
+       </div>
+    </section>
+    <footer class="section-p1">
+        <div class="mob-footer">
+        <img class="logo" src="logo.png" alt="Kamikaze Wear">
+        <div class="col Contacts">
+            <h4>Contact</h4>
+            <p><strong>adress : </strong> kamikaze@kamikaze.tn</p>
+            <p><strong>phone : </strong> +216 73 933 933</p>
+            <p><strong>hours : </strong> 8am ----> 7pm</p>
+        </div>
+        
+        <div class="col about mob-about">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Delivery Information</a>
+        </div>
+        <div class="follow col about">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+            <p>© Kamikaze Wear, Inc. All Rights Reserved.</p>
+
+        </div>
+    </footer>
 </body>
 </html>

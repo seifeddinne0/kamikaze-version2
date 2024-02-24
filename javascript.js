@@ -9,23 +9,21 @@ function myFunction() {
   function verifyName(name) {
     return /^[a-zA-Z]+(\s[a-zA-Z]+)?$/.test(name);
 }
-
 function verifyPhoneNumber(phoneNumber) {
-    return /^\d{8,}$/.test(phoneNumber);
+  return /^\d{8,}$/.test(phoneNumber);
 }
-function verify() {
-    const firstName = document.getElementById('firstname').value;
-    const lastName = document.getElementById('lastname').value;
-    const phoneNumber = document.getElementById('phoneNumber').value;
-    
-    if (!verifyName(firstName) ) {
-        alert('Invalid firstname. Please enter a valid firstname.');    
-    }
-    if (!verifyName(lastName) ) {
-        alert('Invalid lastname. Please enter a valid lastname.');    
-    }
-    if (!verifyPhoneNumber(phoneNumber) ) {
-        alert('Invalid phone number. Please enter a valid phone number.'); 
-    }
-    
-}
+function  checkForm() {
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const phoneNumber = document.getElementById('phoneNumber').value;
+  if (!verifyPhoneNumber(phoneNumber) ) {
+    document.getElementById("phoneNumber").style.border="1px solid #FF0000"; 
+  }
+  if (!verifyName(firstName) ) {
+    document.getElementById("firstname").style.border="1px solid #FF0000" ;    
+  }
+  if (!verifyName(lastName) ) {
+    document.getElementById("lastname").style.border="1px solid #FF0000";    
+  }
+  }
+  
