@@ -26,4 +26,6 @@ function  checkForm() {
     document.getElementById("lastname").style.border="1px solid #FF0000";    
   }
   }
-  
+function goBack() {
+  window.history.back();
+}

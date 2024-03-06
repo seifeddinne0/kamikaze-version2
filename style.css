@@ -19,11 +19,6 @@ h1{
     color: #222;
 }
 h2{
-    font-size: 50px;
-    line-height:64px;
-    color: #222;
-}
-h2{
     font-size: 46px;
     line-height:54px;
     color: #222;
@@ -66,7 +61,7 @@ nav ul{
     justify-content: space-between;
     list-style: none;
 }
-nav li{
+nav .nav-not-for-mob li{
     padding: 0 20px;
     position: relative;
 }
@@ -139,7 +134,7 @@ nav li a.active::after,nav li a:hover::after
 #product1 .pro{
     width: 23%;
     min-width: 250px;
-    padding: 10px 12px;
+    padding: 10px;
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
@@ -275,6 +270,9 @@ footer .follow i{
     font-size: 20px;
     cursor: pointer;
     padding-right:6px ;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 footer .follow i:hover ,footer a:hover{
     color: #088178;
@@ -552,19 +550,20 @@ footer .about{
         margin-left:20px;
     }
     .sidebar li .x{
-        margin-left: 210px;
+        margin-left: 230px;
         font-size: 40px;
     }
     .sidebar li .x:hover{
         color:#088178;
-        background-color: transparent;
     }
     .show-on-mobile{
-        margin-left: 100px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        margin-right: -55px;        
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        font-size:25px;
+    }
+    .show-on-mobile .bars{
+    margin-left: 40px;
     }
     .sac{
         margin-right: -15px;
@@ -634,7 +633,16 @@ footer .about{
         flex-direction: column;
     
     }
-    
+    #details-prod{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #main-img{
+        width: 100vw;
+    }
+    .small-img-group{
+        flex-direction: row;
+    }
 }            
 /*contacts page style*/
 #phoneNumber ,#lastname ,#firstname,#subject {
@@ -644,7 +652,6 @@ footer .about{
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
   }
   #submit {
     background-color: #04AA6D;
@@ -653,10 +660,11 @@ footer .about{
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.3s ease-in;
   } 
   /* Styles for the form */
   #submit:hover {
-    background-color: #45a049;
+    background-color: #088178;
   }
   .column {
     float: left;
@@ -725,6 +733,7 @@ footer .about{
     transform: translateX(1.2%);
     color:#088178;
 }
+/*shop page style*/
 #banner-page{
     background-image: url("banner-page.jpeg");
     background-position: center;
@@ -735,7 +744,7 @@ footer .about{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #060606;
+    border: 0.7px solid #222;
     filter: drop-shadow(0 0 0.45rem grey);
 }
 #banner-page h2{
@@ -762,4 +771,80 @@ footer .about{
 #pages a i{
     font-weight: 650;
     font-size: 16px;
+}
+#pages a:hover{
+    background-color: #039d65;
+}
+/*products page style*/
+#details-prod{
+    display: flex;
+    max-width: 100vw;
+    margin: 20px 0 0 20px;
+}
+#details-prod #main-img{
+    width: 50%;
+    border-radius: 10px;
+}
+.small-img-group{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.second-skin-color{
+    margin-bottom: 7px;
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.single-product-details{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.single-product-details h2{
+    font-size: 37px;
+    color: #222;
+}
+.single-product-details h4{
+    font-size: 22px;
+    color: #060606;
+}
+.single-product-details h4 span{
+    font-size: 24px;
+    color: #088178;
+}
+.single-product-details p{
+    margin-top: 25px;
+    width: 80%;
+    font-size: 17px;
+    color:#465b52;
+}
+#qte {
+  width: 80px;
+  margin-top:5px ;
+  padding: 9px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#add-cart{
+    background-color: #060606;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.go-back{
+    padding-top: 15px;
+    margin: 10px 0 0 20px;
+}
+.go-back button{
+    background-color: #088178;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
